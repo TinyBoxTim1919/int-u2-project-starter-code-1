@@ -1,19 +1,50 @@
 /* The code below puts the title of the website in the center */
 .title { 
-    text-align: center;
+    text-align: left;
+    color: #00E5FF;
+    line-height: 33px;
+}
+.big-logic{
+    font-size: 44px;
+    color: #6A1B9A;
 }
 
+/* The code below puts the subtitle in the middle and a bit closer to the title*/
+.subtitle{
+    text-align: left;
+    color: white;
+    
+}
 /* The code below adds a white background-color and black text color for the body of the page. */
 body {
     color: black;
     text-align: center;
-    background-color: white;
+    background-color: #121212;
 }
 
 
 /* The code below adds a black background-color and white text color for each section heading. */
 .section {
     color:white;
-    text-align: center;
-    background-color: black;
+    text-align: left;
+    background-color: #1E1E1E;
+}
+
+.side-list {
+  display: flex;
+  gap: 2em; /* space between items */
+  padding: 0;
+}
+
+.side-list li {
+  padding: 1em;
+  border-radius: 8px;
+  text-align: left;
+  color: #B0B0B0;
+}
+
+.side-list li::marker {
+  color:#6A1B9A;
+; 
+  font-size: 1.2em; /* Optional: make the bullet larger */
 }
