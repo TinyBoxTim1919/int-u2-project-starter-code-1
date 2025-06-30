@@ -1,43 +1,76 @@
-/* The code below puts the title of the website in the center */
+.title-container {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+}
+
+/* The code below puts the title of the website in the left corner */
 .title { 
     text-align: left;
     color: #00E5FF;
-    line-height: 33px;
+    line-height: 1;
+    font-size: 3.3em;
+    margin: 1em;
+}
+.title-img {
+  width: 400px;
+  max-width: 40vw;
+  margin-left: 2em;
 }
 .big-logic{
-    font-size: 44px;
+    font-size: 3.5em;
     color: #6A1B9A;
 }
 
 /* The code below puts the subtitle in the middle and a bit closer to the title*/
 .subtitle{
-    text-align: left;
+    text-align: center;
     color: white;
-    
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
 }
 /* The code below adds a white background-color and black text color for the body of the page. */
 body {
     color: black;
     text-align: center;
     background-color: #121212;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
 
 /* The code below adds a black background-color and white text color for each section heading. */
 .section {
     color:white;
     text-align: left;
     background-color: #1E1E1E;
+    font-size: 1.3em;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border-radius: 12px;
+    max-width: 900px;
+    margin-left: auto;
+  margin-right: auto;
 }
 
 .side-list {
   display: flex;
   gap: 2em; /* space between items */
   padding: 0;
+  list-style-type: disc;
 }
 
 .side-list li {
   padding: 1em;
+  margin: 5%;
   border-radius: 8px;
   text-align: left;
   color: #B0B0B0;
@@ -47,4 +80,59 @@ body {
   color:#6A1B9A;
 ; 
   font-size: 1.2em; /* Optional: make the bullet larger */
+}
+
+.list li {
+  padding: 1em;
+  border-radius: 8px;
+  text-align: left;
+  color: #B0B0B0;
+}
+
+.list li::marker {
+  color:#6A1B9A;
+; 
+  font-size: 1.2em; /* Optional: make the bullet larger */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  background: #232323;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1em;
+  text-align: left;
+}
+
+th {
+  background: #6A1B9A;
+  color: #fff;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+  background: #2e2e2e;
+}
+
+tr:nth-child(odd) {
+  background: #232323;
+}
+
+td {
+  border-bottom: 1px solid #444;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+table thead tr {
+  border-bottom: 2px solid #FC472E;
 }
