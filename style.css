@@ -136,3 +136,15 @@ tr:last-child td {
 table thead tr {
   border-bottom: 2px solid #FC472E;
 }
+
+.graph-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px; /* controls space between graph and list */
+  margin-top: 10px;
+}
+
+.graph {
+  width: 350px; /* adjust size as needed */
+  height: auto;
+}
